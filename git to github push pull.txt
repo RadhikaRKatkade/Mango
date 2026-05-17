@@ -1,0 +1,83 @@
+PS C:\Users\DELL\OneDrive\Documents\Git and Github\Mango> git branch -M main                                                 
+PS C:\Users\DELL\OneDrive\Documents\Git and Github\Mango> git remote push origin https://github.com/RadhikaRKatkade/Mango.git
+error: unknown subcommand: `push'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+
+PS C:\Users\DELL\OneDrive\Documents\Git and Github\Mango> git commit -m "index.html changes and abc.txt added"               
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\DELL\OneDrive\Documents\Git and Github\Mango> git commit abc.txt -m "added"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+PS C:\Users\DELL\OneDrive\Documents\Git and Github\Mango> git add . 
+PS C:\Users\DELL\OneDrive\Documents\Git and Github\Mango> git commit abc.txt -m "added"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\DELL\OneDrive\Documents\Git and Github\Mango> git remote push origin https://github.com/RadhikaRKatkade/Mango.git
+error: unknown subcommand: `push'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+PS C:\Users\DELL\OneDrive\Documents\Git and Github\Mango> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+PS C:\Users\DELL\OneDrive\Documents\Git and Github\Mango> git add .
+PS C:\Users\DELL\OneDrive\Documents\Git and Github\Mango> git commit -m "Updated README and fixed login bug"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\DELL\OneDrive\Documents\Git and Github\Mango> git push
+Enumerating objects: 6, done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 431 bytes | 107.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/RadhikaRKatkade/Mango.git
+   a44cf5e..7971a8d  main -> main
+PS C:\Users\DELL\OneDrive\Documents\Git and Github\Mango> git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 939 bytes | 31.00 KiB/s, done.
+From https://github.com/RadhikaRKatkade/Mango
+   7971a8d..3c567dd  main       -> origin/main
+Updating 7971a8d..3c567dd
+Fast-forward
+ xyz.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 xyz.txt
+PS C:\Users\DELL\OneDrive\Documents\Git and Github\Mango> 
